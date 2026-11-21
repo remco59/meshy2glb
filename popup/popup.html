@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Meshy GLB Exporter</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <header><div class="brand"><div class="logo">3D</div><div><h1>Meshy Exporter</h1><p>Local model library</p></div></div><button id="refresh" class="icon-button" title="Refresh">↻</button></header>
+  <div class="status"><span class="dot"></span><span id="status">Ready to capture on Meshy</span></div>
+  <nav><button class="tab active" data-tab="models">Captured models <span id="model-count">0</span></button><button class="tab" data-tab="assets">Rigged assets <span id="asset-count">0</span></button></nav>
+  <main><section id="models" class="list"></section><section id="assets" class="list hidden"></section></main>
+  <footer><span>Files stay in this browser</span><a href="https://www.meshy.ai/workspace" target="_blank" rel="noreferrer">Open Meshy ↗</a></footer>
+  <script type="module" src="popup.js"></script>
+</body></html>
